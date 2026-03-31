@@ -2,9 +2,9 @@ package com.innowise.textmanager.reader;
 
 import com.innowise.textmanager.exception.TextException;
 
-import java.util.List;
+import java.nio.file.Path;
 
 public interface TextFileReader {
-    List<String> read(String path) throws TextException;
+    String read(Path path) throws TextException;
 
 }
